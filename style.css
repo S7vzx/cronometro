@@ -1,14 +1,74 @@
 body {
     font-family: "Montserrat", serif;
     text-align: center;
-    background-color: #ffe4e1;
     color: #333;
     padding: 20px;
+    background: url(img/f9e9a7102f159b1c6d204a4941e60bde.gif);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
 }
-img {
+#photo {
     width: 200px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
 }
+#photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 h1 {
-    color: #e63946;
+    color: #000000;
 }
+h2{
+    color:rgb(95, 220, 255);
+}
+#timer {
+    color: aliceblue;
+}
+.texto {
+    
+    border-radius: 15px;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 2s ease-in-out;
+}
+.message {
+    padding: 20px;
+    border-radius: 15px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.music-button {
+    background-color: #ff6347; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.music-button:hover {
+    background-color: #ff4500; /* Cor ao passar o mouse */
+    transform: scale(1.1);
+}
+
