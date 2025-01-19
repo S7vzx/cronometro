@@ -53,9 +53,6 @@ function typeMessage() {
         }
     }, 100);
 }
-document.getElementById("musicButton").addEventListener("click", function() {
-    window.location.href = "https://www.youtube.com/watch?app=desktop&v=izGwDsrQ1eQ";
-});
 function typeMessage() {
     const message = "Você é a melhor coisa que me aconteceu!";
     let index = 0;
