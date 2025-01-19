@@ -4,47 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosso Amor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffe4e1;
-            color: #333;
-            padding: 20px;
-        }
-        img {
-            width: 200px;
-            border-radius: 10px;
-        }
-        h1 {
-            color: #e63946;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
 </head>
 <body>
     <h1>Nosso Amor ❤️</h1>
-    <img src="sua-foto.jpg" alt="Foto de Nós Dois">
+    <img src="/img/foto.png" alt="Foto de Nós Dois">
     <h2>Estamos juntos há:</h2>
     <div id="timer"></div>
 
-    <script>
-        function updateTimer() {
-            const startDate = new Date("2023-03-15T00:00:00"); // Data de início
-            const now = new Date();
-            const diff = now - startDate;
-
-            const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-            const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
-            const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById("timer").innerHTML = 
-                `${years} anos, ${months} meses, ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
-        }
-
-        setInterval(updateTimer, 1000);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
