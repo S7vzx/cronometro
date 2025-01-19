@@ -8,7 +8,9 @@ body {
     background-position: center;
     min-height: 100vh;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
 }
+     
 #photo {
     width: 200px;
     border-radius: 15px;
@@ -29,7 +31,7 @@ h2{
     color:rgb(95, 220, 255);
 }
 #timer {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 .texto {
     
